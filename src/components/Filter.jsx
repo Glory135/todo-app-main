@@ -6,7 +6,10 @@ function Filter() {
   const [active, setActive] = useState(false);
   const [completed, setCompleted] = useState(false);
   const { darkMode, todos, setTodos } = useContext(ThemeContext);
-  let numLeft = todos.filter((item) => item.checked === false).length;
+
+  let numLeft = todos
+    ? todos.filter((item) => item.checked === false).length
+    : 0;
   let item = numLeft === 1 ? "item" : "items";
 
   const All = JSON.parse(localStorage.getItem("todos"));
