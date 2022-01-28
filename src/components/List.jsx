@@ -37,7 +37,7 @@ function List() {
 
   return (
     <div className='list_container'>
-      {todos === true ? (
+      {todos !== null ? (
         todos.length >= 1 ? (
           todos.map((eachTodo) => {
             return (
