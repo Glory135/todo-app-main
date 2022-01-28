@@ -8,7 +8,7 @@ function Add() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(todos);
-    const newTodos = [...todos];
+    const newTodos = todos ? [...todos] : [];
     newTodos.push(todo);
     setTodos(newTodos);
     localStorage.setItem("todos", JSON.stringify(newTodos));
