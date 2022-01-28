@@ -7,6 +7,7 @@ function Add() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(todos);
     const newTodos = [...todos];
     newTodos.push(todo);
     setTodos(newTodos);
