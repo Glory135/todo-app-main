@@ -30,7 +30,7 @@ function Add() {
           value={todo.text}
           onChange={(e) => {
             setTodo({
-              id: todos.length + 1,
+              id: todos && todos.length + 1,
               text: e.target.value,
               checked: false,
             });
