@@ -17,7 +17,10 @@ function Add() {
 
   return (
     <div
-      style={{ backgroundColor: darkMode ? "#25273C" : "white" }}
+      style={{
+        backgroundColor: darkMode ? "#25273C" : "white",
+        transition: "1s",
+      }}
       className='add'
     >
       <div className='circle'></div>
@@ -26,6 +29,7 @@ function Add() {
           style={{
             backgroundColor: darkMode ? "#25273C" : "white",
             color: darkMode ? "#B9BBD4" : "#4C4B5B",
+            transition: "1s",
           }}
           type='text'
           value={todo.text}

@@ -1,17 +1,22 @@
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 .body {
   height: 100vh;
   width: 100vw;
   position: relative;
+  font-family: "Josefin Sans";
 }
 .top {
-  width: 100vw;
+  width: 100%;
   height: 40%;
+  /* background-position: center; */
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
 }
 .down {
-  width: 100vw;
+  width: 100%;
   height: 60%;
 }
 
@@ -154,7 +159,16 @@ body {
   color: #57596e;
   cursor: pointer;
 }
-
+.attribution {
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 @media (max-width: 450px) {
   .content {
     left: 5vw;

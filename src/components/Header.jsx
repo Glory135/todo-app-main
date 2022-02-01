@@ -16,7 +16,7 @@ function Header() {
           setDarkMode(!darkMode);
         }}
         src={darkMode ? sun : moon}
-        alt=''
+        alt='theme-toggle'
       />
     </div>
   );

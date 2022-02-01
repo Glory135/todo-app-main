@@ -42,7 +42,10 @@ function Filter() {
   };
   return (
     <div
-      style={{ backgroundColor: darkMode ? "#25273C" : "white" }}
+      style={{
+        backgroundColor: darkMode ? "#25273C" : "white",
+        transition: "1s",
+      }}
       className='filter'
     >
       <div className='num_left'>

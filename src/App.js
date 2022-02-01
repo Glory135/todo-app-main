@@ -24,18 +24,20 @@ function App() {
         setTodo,
       }}
     >
-      <div className='body'>
-        <div
+      <main className='body'>
+        <header
           style={{
             backgroundImage: darkMode ? `url(${darkImg})` : `url(${lightImg})`,
+            transition: "1s",
           }}
           className='top'
-        ></div>
+        ></header>
         <div
           style={{
             backgroundColor: darkMode
               ? "hsl(235, 21%, 11%)"
               : "hsl(0, 0%, 98%)",
+            transition: "1s",
           }}
           className='down'
         ></div>
@@ -58,7 +60,7 @@ function App() {
           . Coded by{" "}
           <a href='https://www.frontendmentor.io/profile/Glory135'>Glory</a>.
         </div>
-      </div>
+      </main>
     </ThemeContext.Provider>
   );
 }

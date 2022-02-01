@@ -45,6 +45,7 @@ function List() {
                 style={{
                   backgroundColor: darkMode ? "#25273C" : "white",
                   color: darkMode ? "#B9BBD4" : "#4C4B5B",
+                  transition: "1s",
                 }}
                 className='list'
                 key={eachTodo.id}
@@ -90,6 +91,7 @@ function List() {
             style={{
               backgroundColor: darkMode ? "#25273C" : "white",
               color: darkMode ? "#B9BBD4" : "#4C4B5B",
+              transition: "1s",
             }}
             className='list'
           >
@@ -103,6 +105,7 @@ function List() {
           style={{
             backgroundColor: darkMode ? "#25273C" : "white",
             color: darkMode ? "#B9BBD4" : "#4C4B5B",
+            transition: "1s",
           }}
           className='list'
         >
