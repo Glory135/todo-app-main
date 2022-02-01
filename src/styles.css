@@ -1,13 +1,12 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: Josefin Sans;
+  font-family: "specimen", Josefin-Sans;
 }
 .body {
   height: 100vh;
   width: 100vw;
   position: relative;
-  
 }
 .top {
   width: 100%;
